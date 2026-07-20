@@ -49,6 +49,26 @@
     <section id="contacto">
         <h2>Contacto</h2>
         <p>Cuéntanos lo que necesite tu empresa y te respoderemos lo antes posible</p>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Solicita información sobre nuestros servicios</legend>
+
+                <div>
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name"required> 
+                </div>
+                <div>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email"required aria-describedby="ayuda-email">
+                    <small id="ayuda-email">introduce un correo válido, por ejemplo nombre@empres.com</small>
+                </div>
+                <div>
+                    <label for="empresa">Nombre de la Empresa</label>
+                    <input type="text" id="empresa" name="empresa"required> 
+                </div>
+            </fieldset>
+        </form>
+
 
     </section>
 </body>
