@@ -11,42 +11,48 @@
 <body>
     <header class="site-header">
         <div class="container">
-        <h1 class="logo">Startup Go Global</h1>
-        <nav aria-label="Navegación principal">
-            <ul class="menu">
-                <li><a href="#inicio">Incio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+            <h1 class="logo">Startup Go Global</h1>
+            <nav aria-label="Navegación principal">
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
         <!--Comentarios-->
-        <section id="inicio">
-            <h2>impulsamos la presencia digital de tu empresa</h2>
-            <p>
-                En StartupGoGlobal ayudamos a las marcas y negocios a crear experiencias web claras, modernas preparadas
-                para crecer en varios idiomas.
-            </p>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>impulsamos la presencia digital de tu empresa</h2>
+                <p>
+                    En StartupGoGlobal ayudamos a las marcas y negocios a crear experiencias web claras, modernas
+                    preparadas
+                    para crecer en varios idiomas.
+                </p>
+                <a class="button" href="#contacto">Solicitar información</a>
+            </div>
         </section>
     </main>
-    <section id="servicios">
+    <section id="servicios" class="services">
+        <div class="container">
         <h2>Servicios</h2>
-        <article>
+        <article class="services-card">
             <h3>Diseño y maquetación web</h3>
             <p>
                 Creamos interfaces claras, accecibles y adaptadas a distintos dispositivos.
             </p>
         </article>
-        <article>
+        <article class="services-card">
             <h3>Internalización de contenidos</h3>
             <p>Preparamos sitios web para trabajar de forma ordenada en varios idiomas</p>
         </article>
-        <article>
+        <article class="services-card">
             <h3>Optimización y mejora de contenidos</h3>
             <p>Revisamos estructura, calidad del contenido y experiencia de usuario</p>
         </article>
+        </div>
 
     </section>
     <section id="contacto">
@@ -58,29 +64,29 @@
 
                 <div>
                     <label for="name">Nombre completo</label>
-                    <input type="text" id="name" name="name"required> 
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div>
                     <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email"required aria-describedby="ayuda-email">
+                    <input type="email" id="email" name="email" required aria-describedby="ayuda-email">
                     <small id="ayuda-email">introduce un correo válido, por ejemplo nombre@empres.com</small>
                 </div>
                 <div>
                     <label for="empresa">Nombre de la Empresa</label>
-                    <input type="text" id="empresa" name="empresa"required> 
+                    <input type="text" id="empresa" name="empresa" required>
                 </div>
                 <div>
                     <label for="servicio">Servicio de interés</label>
                     <select name="servicio" id="servicio">
-                    <option value="">Selecciona una opción</option>
-                    <option value="maquetacion">Diseño y maquetación web</option>
-                    <option value="i18n">Internacionalización de contenido</option>
-                    <option value="optimizacion">Optimización y mejora continua</option>
+                        <option value="">Selecciona una opción</option>
+                        <option value="maquetacion">Diseño y maquetación web</option>
+                        <option value="i18n">Internacionalización de contenido</option>
+                        <option value="optimizacion">Optimización y mejora continua</option>
                     </select>
                 </div>
                 <div>
                     <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje"rows="5"></textarea>
+                    <textarea name="mensaje" id="mensaje" rows="5"></textarea>
                 </div>
                 <button type="submit">Enviar solicitud</button>
             </fieldset>
