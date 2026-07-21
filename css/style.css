@@ -58,3 +58,23 @@ ul {
     width: min(100% - 32px, var(--max-width));
     margin: 0 auto;
 }
+
+/* Cabecera principal */
+.site-header {
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-sm) 0;
+}
+
+.site-header  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-md);
+}
+/* Estilo logo*/
+.logo {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--color-primary-dark);
+}
